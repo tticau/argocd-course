@@ -5,18 +5,18 @@ metadata:
   namespace: argocd
 spec:
   description: Project for Team Finance with security guardrails
-  
+
   sourceRepos:
-    - https://github.com/tticau/argocd-example-apps.git
+    - 'https://github.com/lm-academy/argocd-example-apps-labs.git'
 
   destinations:
     - server: https://kubernetes.default.svc
       namespace: finance
 
-  clusterResourceWhitelist:
-    - group: "*"
-      kind: "*"
+  # clusterResourceWhitelist:
+  #   - group: "*"
+  #     kind: "*"
 
   namespaceResourceWhitelist:
-    - group: "*"
-      kind: "*"
+    - group: '*'
+      kind: '*'
