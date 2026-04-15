@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/lm-academy/argocd-example-apps-labs.git
+    repoURL: https://github.com/tticau/argocd-example-apps.git
+    path: helm-guestbook
     targetRevision: HEAD
-    path: guestbook
   destination:
     server: https://kubernetes.default.svc
     namespace: default
